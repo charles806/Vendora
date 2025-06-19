@@ -1,0 +1,133 @@
+:root{
+    --primary-color: #3F51B5;
+    --accent-color: #FFA726;
+    --background: #f9f9f9;
+    --text-color: #333333;
+    --text-color-2: #1a1a1a1a;
+    --border-color: #e0e0e0;
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    --font-family: 'Arial', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    max-width: 1440px;
+    width: 100%;
+    /* position: fixed; */
+}
+
+header .top-section{
+    background-color: var(--primary-color);
+    color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    font-size: 14px;
+}
+
+header .top-section p{
+    color: white;
+    font-size: 1rem;
+}
+
+header .top-section .top-section-links{
+    display: flex;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+header .top-section .top-section-links .links{
+    color: var(--background);
+    margin-left: 15px;
+    transition: color .3s ease;
+}
+
+header .top-section .top-section-links .links:hover{
+    color: var(--accent-color);
+}
+
+header nav{
+    padding: 10px 10px;
+    background-color: var(--background);
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header nav .logo-img{
+    width: 250px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+header nav .toggle-menu{
+    display: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header nav .nav-links{
+    display: flex;
+    gap: 5px;
+}
+
+header nav .nav-links .nav-link{
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: color .3s ease;
+}
+
+header nav .nav-links .nav-link:hover{
+    color: var(--accent-color);
+}
+
+header nav .nav-icons ul{
+    display: flex;
+    gap: 20px;
+}
+
+header nav .nav-icons ul nav-icon{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color .3s ease;
+}
+header nav .nav-icons ul li:hover{
+    color: var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
